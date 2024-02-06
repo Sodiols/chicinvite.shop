@@ -18,6 +18,9 @@
     --btn-bg: #9324fa;
 }
 
+a {
+    color: #000;
+}
 
 html {
     scroll-behavior: smooth;
@@ -89,6 +92,20 @@ html {
     transition: transform 0.3s ease;
 }
 
+.navbar-links .btn {
+    background: #f3f5f6;
+    transition: .2s all ease;
+}
+
+.navbar-links .btn:hover {
+    background: #ccc;
+}
+
+.navbar-links .cart {
+    border-radius: 50%;
+    font-size: 18px;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     .navbar-links {
@@ -135,16 +152,14 @@ html {
 /* Home page open */
 
 #home {
-    height: 75vh;
+    height: 90vh;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: -250px;
 }
 
-#home h3 {
-    margin-top: 140px;
-    margin-bottom: 10px;
-    font-size: 40px;
-    font-family: var(--roboto-mono-font);
+#home .home-text {
+    margin-top: 150px;
 }
 
 #home hr {
@@ -154,19 +169,61 @@ html {
     border: 3px solid #afafaf;
 }
 
-#home .choose {
+.home-design {
+    margin-top: 70px;
+}
+
+.home-design a p {
+    padding-top: 10px;
+    transition: .3s all ease;
+}
+
+.home-design a:hover p {
+    color: var(--main-color);
+}
+
+.design-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    #home {
+        margin-bottom: 50px;
+    }
+}
+
+/* Home page close */
+
+/* ************************ about open ********************************* */
+#about {
+    width: 100%;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#about h3 {
+    padding-top: 140px;
+    font-size: 40px;
+    font-family: var(--roboto-mono-font);
+}
+
+#about hr {
+    margin-top: 5px;
+    margin: 0 auto;
+    width: 11%;
+    border: 3px solid #afafaf;
+}
+
+#about .choose {
     letter-spacing: 5px;
     font-weight: 700;
     color: var(--main-color);
 }
 
-#home p {
-    width: 80%;
-    margin: 0 auto;
-    line-height: 25px;
-}
-
-#home .btn {
+#about .btn {
     color: var(--btn-color);
     display: block;
     margin: 0 auto;
@@ -175,9 +232,15 @@ html {
     background: var(--btn-bg);
 }
 
-/* Home page close */
+#about p {
+    margin-top: 35px;
+}
 
+#about .row div {
+    margin-top: 80px;
+}
 
+/* ************************ about close ******************************** */
 
 
 /* !!!!!!!!!! Products open !!!!!!!!!!!  */
@@ -338,57 +401,6 @@ html {
 
 
 
-
-
-/* ************************ about open ********************************* */
-#about {
-    width: 100%;
-    align-items: center;
-    margin-bottom: 80px;
-}
-
-.about-image img {
-    width: 400px;
-    height: auto;
-}
-
-.about .row div {
-    margin-top: 80px;
-}
-
-.about .row h2 {
-    font-weight: bold;
-    font-size: 35px;
-    color: #555;
-    margin-top: 70px;
-}
-
-.about .row .about-txt {
-    padding-top: 80px;
-}
-
-.about-txt h1 {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--btn-bg);
-}
-
-.about-txt p {
-    color: #b4b4b4;
-}
-
-
-@media(max-width: 768px) {
-    .about-txt {
-        margin-bottom: 90px;
-    }
-
-    .about-txt span {
-        display: block;
-        margin-top: -100px;
-    }
-}
-
-/* ************************ about close ******************************** */
 
 
 
