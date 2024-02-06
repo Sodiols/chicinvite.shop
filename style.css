@@ -7,7 +7,6 @@
     font-family: var(--mooli-font);
 }
 
-
 :root {
     --mooli-font: 'Mooli', sans-serif;
     --roboto-mono-font: 'Roboto Mono', monospace;
@@ -147,8 +146,6 @@ html {
 
 /* !!!!!!!!!!!!!! Nav close !!!!!!!!!!!!!!  */
 
-
-
 /* Home page open */
 
 #home {
@@ -241,7 +238,6 @@ html {
 }
 
 /* ************************ about close ******************************** */
-
 
 /* !!!!!!!!!! Products open !!!!!!!!!!!  */
 #products {
@@ -399,13 +395,6 @@ html {
 
 /* !!!!!!!!!! Products close !!!!!!!!!!  */
 
-
-
-
-
-
-
-
 /*! contact us open */
 .contact .container {
     max-width: 1320px;
@@ -490,11 +479,6 @@ textarea:focus {
 
 /*! contact us close */
 
-
-
-
-
-
 /* footer open */
 footer {
     bottom: 0;
@@ -535,7 +519,6 @@ footer {
 
 /* footer close */
 
-
 /* ? ext */
 .span {
     color: var(--main-color);
@@ -557,7 +540,6 @@ footer img {
     bottom: 0;
     position: relative;
 }
-
 
 /* ???????? media queries ???????? */
 
