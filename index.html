@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
@@ -29,7 +30,8 @@
             <li class="mt-2"><a href="#" class="navbar-link">Home</a></li>
             <li class="mt-2"><a href="#products" class="navbar-link">Products</a></li>
             <li class="mt-2"><a href="#about" class="navbar-link">About Us</a></li>
-            <li><a href="#contact" class="btn border border-1">Let's talk</a></li>
+            <li><a href="#contact" class="btn">Let's talk</a></li>
+            <li><a href="#" class="btn cart"><i class="bi bi-cart"></i></a></li>
         </ul>
 
         <div class="navbar-toggle" id="navbar-toggle">
@@ -44,7 +46,59 @@
 
     <!--! ===========  home open  ============== -->
     <section id="home">
-        <h3 class="text-center">Why <span class="choose">Choose</span> Chic Invite?</h3>
+        <div class="home-text">
+            <h2 class="text-center">Take Your design's</h2>
+            <hr>
+        </div>
+        <div class="home-design">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-6 design-div">
+                        <a href="#" class="text-decoration-none">
+                            <img src="img/std.webp" class="img-fluid rounded-circle" style="width: 170px; height: 170px;">
+                            <p class="text-center">Save The Dates</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6 design-div">
+                        <a href="#" class="text-decoration-none">
+                            <img src="img//b-day.webp" class="img-fluid rounded-circle" style="width: 170px; height: 170px;">
+                            <p class="text-center">Birthdays</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6 design-div">
+                        <a href="#" class="text-decoration-none">
+                            <img src="img/baby.webp" class="img-fluid rounded-circle" style="width: 170px; height: 170px;">
+                            <p class="text-center text-decoration-none">Baby Showers</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6 design-div">
+                        <a href="#" class="text-decoration-none">
+                            <img src="img/gifts.webp" class="img-fluid rounded-circle" style="width: 170px; height: 170px;">
+                            <p class="text-center">Personalized Gifts</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6 design-div">
+                        <a href="#" class="text-decoration-none">
+                            <img src="img/valentine.webp" class="img-fluid rounded-circle" style="width: 170px; height: 170px;">
+                            <p class="text-center">Valentine's Day Cards</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6 design-div">
+                        <a href="#" class="text-decoration-none">
+                            <img src="img/top.webp" class="img-fluid rounded-circle" style="width: 170px; height: 170px;">
+                            <p class="text-center">Top Deals</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! ===========  home close  ============== -->
+    
+    
+    <!--? ============== about us open =============== -->
+    <div id="about" class="container about">
+            <h3 class="text-center">Why <span class="choose">Choose</span> Chic Invite?</h3>
 
         <hr>
 
@@ -53,11 +107,9 @@
             aliquam, cum consequatur, illo libero! Ullam voluptatibus inventore veniam, voluptatum, qui nulla tempore
             laboriosam voluptate illum dolor praesentium! Iure iusto voluptate quam impedit.</p>
         <a href="#products" class="btn">Our Designs</a>
-    </section>
-    <!--! ===========  home close  ============== -->
-
-
-
+    </div>
+    <!--? ============== about us close ============== -->
+    
 
     <!--* ========== PODUCTS OPEN ============= -->
     <div id="products" class="wrapper">
@@ -146,7 +198,7 @@
                         </div>
                     </div>
 
-                    <div class="filter-item all">
+                    <div class="filter-item all new">
                         <div class="Filter-item">
                             <div class="item-img">
                                 <img src="img/fp-6.jpeg" alt="">
@@ -163,7 +215,7 @@
 
 
 
-                    <div class="filter-item all">
+                    <div class="filter-item all new">
                         <div class="Filter-item">
                             <div class="item-img">
                                 <img src="img/fp-7.jpeg" alt="">
@@ -179,7 +231,7 @@
                     </div>
 
 
-                    <div class="filter-item all">
+                    <div class="filter-item all new">
                         <div class="Filter-item">
                             <div class="item-img">
                                 <img src="img/fp-8.jpeg" alt="">
@@ -196,7 +248,7 @@
                 </div>
 
                 <div class="filter-items">
-                    <div class="filter-item all new">
+                    <div class="filter-item all coming">
                         <div class="Filter-item">
                             <div class="item-img">
                                 <img src="img/fp-9.jpeg" alt="">
@@ -211,7 +263,7 @@
                         </div>
                     </div>
 
-                    <div class="filter-item all new">
+                    <div class="filter-item all coming">
                         <div class="Filter-item">
                             <div class="item-img">
                                 <img src="img/fp-5.jpeg" alt="">
@@ -225,7 +277,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="filter-item all new">
+                    <div class="filter-item all coming">
                         <div class="Filter-item">
                             <div class="item-img">
                                 <img src="img/fp-4.jpeg" alt="">
@@ -249,23 +301,6 @@
 
 
 
-    <!--! ============== about us open =============== -->
-    <div id="about" class="container about">
-        <div class="row">
-            <div class="col-12 col-lg-6 about-image">
-                <img src="img/chic-about.jpeg" alt="About" class="img-fluid rounded">
-            </div>
-            <div class="col-12 col-lg-6 about-txt">
-                <span>HELLO THERE</span>
-                <h1>We Are Chic Invite</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo fugiat labore esse quo porro
-                    iusto tempora. Repellendus laborum, dolor neque, dolorem aliquid dicta alias, eligendi dolores
-                    ducimus pariatur nulla doloremque ad sint labore nihil quae facere iusto! Excepturi delectus
-                    laboriosam cumque saepe consequuntur deleniti, earum alias amet fuga eveniet?</p>
-            </div>
-        </div>
-    </div>
-    <!--! ============== about us close ============== -->
 
 
 
