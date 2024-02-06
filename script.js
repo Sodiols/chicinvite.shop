@@ -13,11 +13,7 @@ navbarToggle.addEventListener("click", () => {
         bar.style.bottom = navbarLinks.classList.contains("active") && index === 2 ? "8px" : "0";
     });
 });
-
-
-
 //! nav close
-
 
 // * for prodcuts 
 
@@ -48,7 +44,6 @@ function resetActiveBtn() {
     })
 }
 
-
 // ! for email
 function sendMail() {
     var params = {
@@ -70,5 +65,4 @@ function sendMail() {
 
         })
         .catch(err => console.log(err));
-
 }
