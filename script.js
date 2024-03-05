@@ -44,25 +44,88 @@ function resetActiveBtn() {
     })
 }
 
-// ! for email
+
+// ! email js
+
+const fillStarOne = document.getElementById('fillStarOne');
+const fillStarTwo = document.getElementById('fillStarTwo');
+const fillStarThree = document.getElementById('fillStarThree');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const popfca = document.querySelector('.popfca');
+const popEmail = document.querySelector('.popEmail');
+
+function checkEmptyFields() {
+    // Check if name, email, and message are filled out
+    if (nameInput.value.trim() === "") {
+        fillStarOne.innerHTML = "*";
+    } else {
+        fillStarOne.innerHTML = "";
+    }
+
+    if (emailInput.value.trim() === "") {
+        fillStarTwo.innerHTML = "*";
+    } else {
+        fillStarTwo.innerHTML = "";
+    }
+
+    if (messageInput.value.trim() === "") {
+        fillStarThree.innerHTML = "*";
+    } else {
+        fillStarThree.innerHTML = "";
+    }
+}
+
 function sendMail() {
+    var name = nameInput.value;
+    var email = emailInput.value;
+    var message = messageInput.value;
+
+    // Check if name, email, and message are filled out
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+        fillStarOne.innerHTML = name.trim() === "" ? "*" : "";
+        fillStarTwo.innerHTML = email.trim() === "" ? "*" : "";
+        fillStarThree.innerHTML = message.trim() === "" ? "*" : "";
+        popfca.style.display = "block";
+        setInterval(() => {
+            popfca.style.display = "none";
+        }, 3000);
+
+        return; // Stop execution if any field is empty
+    }
+
+    // Check if the email contains '@'
+    if (!email.includes('@')) {
+        fillStarTwo.innerHTML = "*"; 
+        popEmail.style.display = "block";
+        setInterval(() => {
+            popEmail.style.display = "none";
+        }, 3000);
+        return; // Stop execution if email is invalid
+    }
+
+    // Sending email
     var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
+        name: name,
+        email: email,
+        message: message,
     };
 
     const serviceID = "service_0s3capu";
     const templateID = "template_dbdwm4z";
-
     emailjs.send(serviceID, templateID, params)
         .then(res => {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
+            nameInput.value = "";
+            emailInput.value = "";
+            messageInput.value = "";
             console.log(res);
-            alert("Your message sent successfully! We'll contact you soon!")
-
+            alert("Your message sent successfully! We'll contact you soon!");
         })
         .catch(err => console.log(err));
 }
+
+// Event listeners to check for empty fields
+nameInput.addEventListener('input', checkEmptyFields);
+emailInput.addEventListener('input', checkEmptyFields);
+messageInput.addEventListener('input', checkEmptyFields);
