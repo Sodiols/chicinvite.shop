@@ -90,7 +90,7 @@ function sendMail() {
         popfca.style.display = "block";
         setInterval(() => {
             popfca.style.display = "none";
-        }, 3000);
+        }, 5000);
 
         return; // Stop execution if any field is empty
     }
