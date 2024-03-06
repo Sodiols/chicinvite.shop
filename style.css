@@ -557,7 +557,8 @@ footer img {
 
 
 /* ! ========= popupfc ========= */
-.popfca,.popEmail {
+.popfca,
+.popEmail {
     width: 500px;
     background: #fff;
     border-radius: 10px;
@@ -567,14 +568,35 @@ footer img {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    box-shadow: 2px 2px 5px 10px rgba(255, 0, 0, 0.2);
 }
 
-.popfca h1, .popEmail h1 {
+.popfca h1,
+.popEmail h1 {
     font-size: 35px;
-    padding: 30px 50px;
+    padding: 15px 40px;
     font-family: var(--roboto-condesed-font);
-    box-shadow: 2px 2px 5px 10px rgba(0, 0, 0, 0.03);
 }
+
+.error {
+    font-size: 30px;
+    color: red;
+}
+
+
+@media (max-width:768px) {
+
+    .popfca,
+    .popEmail {
+        width: 80%;
+    }
+
+    .popfca h1,
+    .popEmail h1 {
+        font-size: 20px;
+    }
+}
+
 /* ! ========= popupfc ========= */
 
 
@@ -611,4 +633,4 @@ footer img {
     100% {
         transform: translateX(0);
     }
-} 
+}
